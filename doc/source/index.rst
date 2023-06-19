@@ -10,7 +10,34 @@ Welcome to Game Of Life's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   GameOfLife
+   GameController
+   Main
+   StartScreen
 
+Game
+============
+
+.. automodule:: GameOfLife.Game
+   :members:
+
+GameController
+==============
+
+.. automodule:: GameOfLife.GameController
+   :members:
+
+Main
+====
+
+.. automodule:: GameOfLife.Main
+   :members:
+
+StartScreen
+===========
+
+.. automodule:: GameOfLife.StartScreen
+   :members:
 
 Indices and tables
 ==================
