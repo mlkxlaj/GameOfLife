@@ -35,3 +35,21 @@ def create_widgets(self):
 
     start_button = tk.Button(self.root, text="Rozpocznij grę", command=self.start_game)
     start_button.pack(pady=20, padx=100)
+
+    def start_game(self):
+        """
+        Rozpoczyna grę na podstawie wprowadzonych danych przez użytkownika.
+        """
+        height = int(self.height_entry.get())
+        width = int(self.width_entry.get())
+
+        self.root.destroy()
+
+        # Create a new Tkinter root window for the game
+        root = tk.Tk()
+
+        # Initialize the Game object with the provided height and width
+        Game(root, height, width)
+
+        # Start the Tkinter event loop
+        root.mainloop()
