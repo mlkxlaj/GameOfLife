@@ -18,5 +18,5 @@ Autor: Mikolaj Kowaszewicz, Jakub Malewicz
 from StartScreen import *
 
 if __name__ == "__main__":
-    start_screen = StartScreen()  # Tworzenie instancji klasy StartScreen
-    start_screen.root.mainloop()  # Uruchomienie głównej pętli zdarzeń okna tkinter
+    start_screen = StartScreen()
+    start_screen.root.mainloop()
