@@ -83,13 +83,13 @@
                 
                   <li class="toctree-l2"><a href="#submodules" class="reference internal">Submodules</a></li>
                 
-                  <li class="toctree-l2"><a href="#project-game-module" class="reference internal">Project.Game module</a></li>
+                  <li class="toctree-l2"><a href="#module-Project.Game" class="reference internal">Project.Game module</a></li>
                 
                   <li class="toctree-l2"><a href="#module-Project.GameController" class="reference internal">Project.GameController module</a></li>
                 
-                  <li class="toctree-l2"><a href="#project-startscreen-module" class="reference internal">Project.StartScreen module</a></li>
+                  <li class="toctree-l2"><a href="#module-Project.StartScreen" class="reference internal">Project.StartScreen module</a></li>
                 
-                  <li class="toctree-l2"><a href="#project-main-module" class="reference internal">Project.main module</a></li>
+                  <li class="toctree-l2"><a href="#module-Project.main" class="reference internal">Project.main module</a></li>
                 
                   <li class="toctree-l2"><a href="#module-Project" class="reference internal">Module contents</a></li>
                 
@@ -132,8 +132,68 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
 </section>
-<section id="project-game-module">
-<h2>Project.Game module<a class="headerlink" href="#project-game-module" title="Permalink to this heading">¶</a></h2>
+<section id="module-Project.Game">
+<span id="project-game-module"></span><h2>Project.Game module<a class="headerlink" href="#module-Project.Game" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Project.Game.Game">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Project.Game.</span></span><span class="sig-name descname"><span class="pre">Game</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.create_board">
+<span class="sig-name descname"><span class="pre">create_board</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.create_board"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.create_board" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Tworzy planszę gry.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.create_menu">
+<span class="sig-name descname"><span class="pre">create_menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.create_menu"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.create_menu" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Tworzy menu gry.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.drag">
+<span class="sig-name descname"><span class="pre">drag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.drag"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.drag" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Obsługuje zdarzenie przeciągania (drag) komórki o określonych współrzędnych (i, j).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.game_loop">
+<span class="sig-name descname"><span class="pre">game_loop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.game_loop"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.game_loop" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Pętla główna gry, która aktualizuje planszę i wywołuje samą siebie w odpowiednich odstępach czasu.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.randomize_board">
+<span class="sig-name descname"><span class="pre">randomize_board</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.randomize_board"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.randomize_board" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Losowo ustawia stan komórek na planszy.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.start_game">
+<span class="sig-name descname"><span class="pre">start_game</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.start_game"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.start_game" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Rozpoczyna grę, jeśli jeszcze nie jest uruchomiona.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.stop_game">
+<span class="sig-name descname"><span class="pre">stop_game</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.stop_game"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.stop_game" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Zatrzymuje działanie gry.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.toggle_cell">
+<span class="sig-name descname"><span class="pre">toggle_cell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.toggle_cell"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.toggle_cell" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Przełącza stan komórki o określonych współrzędnych (i, j).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.Game.Game.update_board">
+<span class="sig-name descname"><span class="pre">update_board</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/Game.html#Game.update_board"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.Game.Game.update_board" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Aktualizuje wygląd planszy gry na podstawie stanu komórek.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-Project.GameController">
 <span id="project-gamecontroller-module"></span><h2>Project.GameController module<a class="headerlink" href="#module-Project.GameController" title="Permalink to this heading">¶</a></h2>
@@ -168,11 +228,40 @@
 </dd></dl>
 
 </section>
-<section id="project-startscreen-module">
-<h2>Project.StartScreen module<a class="headerlink" href="#project-startscreen-module" title="Permalink to this heading">¶</a></h2>
+<section id="module-Project.StartScreen">
+<span id="project-startscreen-module"></span><h2>Project.StartScreen module<a class="headerlink" href="#module-Project.StartScreen" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Project.StartScreen.StartScreen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Project.StartScreen.</span></span><span class="sig-name descname"><span class="pre">StartScreen</span></span><a class="reference internal" href="_modules/Project/StartScreen.html#StartScreen"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.StartScreen.StartScreen" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Konstruktor ekranu startowego.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.StartScreen.StartScreen.create_widgets">
+<span class="sig-name descname"><span class="pre">create_widgets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/StartScreen.html#StartScreen.create_widgets"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.StartScreen.StartScreen.create_widgets" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Tworzy elementy ekranu startowego. Wysokość i szerokość planszy, tytuł, przycisk do rozpoczęcia gry.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.StartScreen.StartScreen.start_game">
+<span class="sig-name descname"><span class="pre">start_game</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/StartScreen.html#StartScreen.start_game"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.StartScreen.StartScreen.start_game" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Rozpoczyna grę na podstawie wprowadzonych danych przez użytkownika.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="project-main-module">
-<h2>Project.main module<a class="headerlink" href="#project-main-module" title="Permalink to this heading">¶</a></h2>
+<section id="module-Project.main">
+<span id="project-main-module"></span><h2>Project.main module<a class="headerlink" href="#module-Project.main" title="Permalink to this heading">¶</a></h2>
+<p>To jest główna klasa odpowiedzialna za uruchomienie gry.</p>
+<p>Program rozpoczyna się tworzeniem instancji klasy StartScreen i uruchamianiem jej głównej pętli zdarzeń.</p>
+<dl>
+<dt>Sposób użycia:</dt><dd><p>Uruchom ten skrypt, aby uruchomić program. Użytkownik bedzie przywitany 2 okienkami opcji w ktorych bedzie mogł wpisać rozmiar planszy i zatwierdzić.</p>
+<p>Nastepnie gracze moze pomalowac w dowolnym miejscu plansze na ktorej bedzie rozgrywała się gra.</p>
+<p>Aby uruchomić program należy w górnym lewym rogu najechac na menu i kliknac przycisk start.</p>
+<p>W menu są też możliwosci zastopowania, losowo pomalowania planszy oraz zamknięcia okienka i programu.</p>
+</dd>
+</dl>
+<p>Autor: Mikolaj Kowaszewicz, Jakub Malewicz</p>
 </section>
 <section id="module-Project">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Project" title="Permalink to this heading">¶</a></h2>
