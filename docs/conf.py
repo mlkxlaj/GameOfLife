@@ -9,25 +9,25 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../.."))
+sys.path.insert(0, os.path.abspath(".."))
 
 project = 'Game Of Life'
-copyright = '2023, Kuba Malewicz, Mikołaj Kowaszewicz'
-authors = 'Kuba Malewicz, Mikołaj Kowaszewicz'
-release = '1.0'
+copyright = '2023, Kuba Malewicz, Mikolaj Kowaszewicz'
+author = 'Kuba Malewicz, Mikolaj Kowaszewicz'
+release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-
+extensions = ["sphinx.ext.todo", "sphinx.ext.viewcode", "sphinx.ext.autodoc"]
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-language = 'pl'
+language = 'PL'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = 'press'
 html_static_path = ['_static']

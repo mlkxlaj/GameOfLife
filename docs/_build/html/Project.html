@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html  lang="PL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+      <title>Project package</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Indeks" href="genindex.html" />
+  <link rel="search" title="Szukaj" href="search.html" />
+  <link rel="prev" title="GameOfLife" href="modules.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Game Of Life</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Szybkie wyszukiwanie</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Szukaj" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="modules.html#gameoflife">gameoflife</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Project package</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#submodules" class="reference internal">Submodules</a></li>
+                
+                  <li class="toctree-l2"><a href="#project-game-module" class="reference internal">Project.Game module</a></li>
+                
+                  <li class="toctree-l2"><a href="#module-Project.GameController" class="reference internal">Project.GameController module</a></li>
+                
+                  <li class="toctree-l2"><a href="#project-startscreen-module" class="reference internal">Project.StartScreen module</a></li>
+                
+                  <li class="toctree-l2"><a href="#project-main-module" class="reference internal">Project.main module</a></li>
+                
+                  <li class="toctree-l2"><a href="#module-Project" class="reference internal">Module contents</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="modules.html">GameOfLife</a> &raquo;</li>
+    
+    <li>Project package</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="modules.html"
+       title="poprzedni rozdział">← GameOfLife</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="project-package">
+<h1>Project package<a class="headerlink" href="#project-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="project-game-module">
+<h2>Project.Game module<a class="headerlink" href="#project-game-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-Project.GameController">
+<span id="project-gamecontroller-module"></span><h2>Project.GameController module<a class="headerlink" href="#module-Project.GameController" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Project.GameController.GameController">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Project.GameController.</span></span><span class="sig-name descname"><span class="pre">GameController</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/GameController.html#GameController"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.GameController.GameController" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.GameController.GameController.count_live_neighbors">
+<span class="sig-name descname"><span class="pre">count_live_neighbors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/GameController.html#GameController.count_live_neighbors"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.GameController.GameController.count_live_neighbors" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Liczy liczbę żywych sąsiadów dla komórki o współrzędnych (i, j).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.GameController.GameController.get_next_state">
+<span class="sig-name descname"><span class="pre">get_next_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/GameController.html#GameController.get_next_state"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.GameController.GameController.get_next_state" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Zwraca stan komórki (żywa lub martwa) na podstawie jej sąsiadów.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.GameController.GameController.randomize_board">
+<span class="sig-name descname"><span class="pre">randomize_board</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/GameController.html#GameController.randomize_board"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.GameController.GameController.randomize_board" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Losowo ustawia stany komórek na planszy.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Project.GameController.GameController.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Project/GameController.html#GameController.update"><span class="viewcode-link"><span class="pre">[źródło]</span></span></a><a class="headerlink" href="#Project.GameController.GameController.update" title="Stały odnośnik do tej definicji">¶</a></dt>
+<dd><p>Aktualizuje stan planszy na podstawie zasad Gry w życie.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="project-startscreen-module">
+<h2>Project.StartScreen module<a class="headerlink" href="#project-startscreen-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="project-main-module">
+<h2>Project.main module<a class="headerlink" href="#project-main-module" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-Project">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Project" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="modules.html"
+       title="poprzedni rozdział">← GameOfLife</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2023, Kuba Malewicz, Mikolaj Kowaszewicz.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
